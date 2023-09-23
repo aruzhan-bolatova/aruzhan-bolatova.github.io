@@ -5,7 +5,7 @@ console.log("works")
 
 // Creating constant variables equalling the values and inputs from html by using .getElementById function
 document.addEventListener('DOMContentLoaded', function() {
-    const commentList = document.getElementById('comments');
+    const comments = document.getElementById('comments');
     const commentInput = document.getElementById('enter_comment');
     const publishBtn = document.getElementById('publish'); 
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (commentText !== '') {
             const li = document.createElement('li');
             li.textContent = commentText;
-            commentList.appendChild(li);
+            comments.appendChild(li);
             commentInput.value = '';
             publishBtn.removeAttribute("disabled");
  			publishBtn.classList.add("abled")
